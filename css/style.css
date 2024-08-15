@@ -42,7 +42,7 @@
 }
 
 hr {
-    border-bottom: 1px solid var(--border-color);
+    border: 1px solid var(--border-color);
 }
 
 /*==========================================================*/
@@ -132,6 +132,8 @@ hr {
 
 .header__hero {
     padding-top: 100px;
+    margin-bottom: 120px;
+
     background: url(../img/decor/bg-arrow.png) 93% 30% no-repeat
 }
 
@@ -170,6 +172,86 @@ hr {
 .hero__text {
     color: #e4e4e7;
     margin-bottom: 50px;
+}
+
+
+/*==========================================================*/
+/*==========================================================*/
+/*========================PRODUCTS==========================*/
+/*==========================================================*/
+/*==========================================================*/
+
+
+.mian__products {
+    margin-bottom: 120px;
+}
+
+.products__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 50px;
+
+    margin-bottom: 100px;
+}
+.products__description {
+    max-width: 910px;
+}
+
+.switch {
+    display: flex;
+    padding: 14px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 82px;
+    background: var(--accent-bg);
+}
+
+.switch__item {
+    padding: 14px 0 14px;
+}
+
+.switch__link {
+    padding: 14px 24px;
+    border-radius: 140px;
+
+    font-weight: 300;
+    color: var(---global-white);
+}
+
+.switch__link--active {
+    color: var(--accent-bg);
+    background: var(--accent-green);
+    font-weight: 500;
+}
+
+/*==========================================================*/
+
+.product-list {
+    display: none;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.product-list--active {
+    display: flex;
+}
+
+.product-list__item--separator {
+    height: 319px;
+}
+
+.product-list__item {
+    text-align: center;
+    max-width: 465px;
+}
+
+.product-list__title {
+    font-size: 24px;
+    color: var(---global-white);
+    padding: 30px 20px;
+    font-weight: 300;
 }
 
 
