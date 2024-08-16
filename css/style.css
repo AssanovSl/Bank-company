@@ -194,6 +194,7 @@ hr {
 
     margin-bottom: 100px;
 }
+
 .products__description {
     max-width: 910px;
 }
@@ -262,7 +263,7 @@ hr {
 /*==========================================================*/
 
 
-.main__cases{
+.main__cases {
     margin-bottom: 150px;
 }
 
@@ -288,14 +289,12 @@ hr {
 
 .cases__tiles:first-child {
     background:
-        var(--accent-bg) 
-        url(../img/decor/bg-semicircle-lef.png) no-repeat;
+        var(--accent-bg) url(../img/decor/bg-semicircle-lef.png) no-repeat;
 }
 
 .cases__tiles:last-child {
     background:
-        var(--accent-bg) 
-        url(../img/decor/bg-semicircle-right.png) 100% 0% no-repeat;
+        var(--accent-bg) url(../img/decor/bg-semicircle-right.png) 100% 0% no-repeat;
 }
 
 .cases__tiles-item {
@@ -348,6 +347,78 @@ hr {
     padding: 18px 24px;
 }
 
+.cases__grid-button:hover {
+    box-shadow: inset 0px 0px 29px rgba(69, 75, 69, 0.8);
+}
+
+/*==========================================================*/
+/*==========================================================*/
+/*==========================FAQ=============================*/
+/*==========================================================*/
+/*==========================================================*/
+
+
+.main__faq {
+    margin-bottom: 150px;
+}
+
+
+.faq__text {
+    padding: 14px 0 80px;
+}
+
+.faq__grid {
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    gap: 30px;
+    background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, #191919 100%);
+}
+
+.faq__grid-item {
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+
+    padding: 50px;
+}
+
+.faq__grid-question {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(---global-white);
+    margin-bottom: 30px;
+}
+
+.faq__grid-answer {
+    margin-top: 30px;
+}
+
+.faq__grid-item:nth-child(3),
+.faq__grid-item:nth-child(4) {
+    -webkit-mask: linear-gradient(to bottom, #ffffff, transparent);
+    mask: linear-gradient(to bottom, #ffffff, transparent);
+    user-select: none;
+}
+
+.expand__faq{
+    display: flex;
+    justify-content: center;
+}
+
+.faq__button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 18px 24px;
+    color: var(---global-white);
+    background: var(--accent-bg);
+    border: 1px solid var(--border-color);
+    font-weight: 200;
+}
+
+.faq__button:hover {
+    box-shadow: inset 0px 0px 29px rgba(69, 75, 69, 0.8);
+}
 
 /*==========================================================*/
 /*==========================================================*/
@@ -375,14 +446,15 @@ hr {
 }
 
 .banner__inner--texture {
-    background: 
-    url(../img/decor/bg-semicircle-lef.png) no-repeat,
-    url(../img/decor/texture_bg.png);
+    background:
+        url(../img/decor/bg-semicircle-lef.png) no-repeat,
+        url(../img/decor/texture_bg.png);
 }
 
 .banner__content {
     max-width: 1100px;
 }
+
 .banner__titile {
     font-weight: 400;
     font-size: 40px;
