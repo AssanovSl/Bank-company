@@ -351,6 +351,60 @@ hr {
     box-shadow: inset 0px 0px 29px rgba(69, 75, 69, 0.8);
 }
 
+
+/*==========================================================*/
+/*==========================================================*/
+/*======================FEATURES============================*/
+/*==========================================================*/
+/*==========================================================*/
+
+
+.features {
+}
+.main__features {
+    margin-bottom: 136px;
+}
+
+.features__text {
+    margin-bottom: 80px;
+}
+.features__inner {
+    display: flex;
+    gap: 30px;
+}
+.tab-buttons {
+    background: var(--accent-bg);
+    border-radius: 12px;
+    padding: 50px;
+}
+.tab-button__item {
+}
+.tab-buttons__link {
+}
+.features__grid {
+    display: grid;
+    grid-template: auto / repeat(2,1fr);
+    gap: 30px;
+    max-width: 1258px;
+}
+
+.features__grid-item {
+    background: var(--accent-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+
+    padding: 50px;
+}
+
+.features__grid-title {
+    font-size: 22px;
+    color: var(---global-white);
+    font-weight: 400;
+}
+.features__grid-text {
+}
+
+
 /*==========================================================*/
 /*==========================================================*/
 /*==========================FAQ=============================*/
