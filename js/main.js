@@ -49,9 +49,37 @@
         }
 
         /*================================================================*/
-        /*===================tab in testimonials==========================*/
+        /*===================tab in FEATURES==========================*/
         /*================================================================*/
 
+        const tabControls = document.querySelector('.tab-buttons')
+
+        tabControls.addEventListener('click', toggleTab)
+
+        function toggleTab(e) {
+
+            const tabControl = e.target.closest('.tab-buttons__link')
+
+            if (!tabControl) return
+            e.preventDefault()
+            if (tabControl.classList.contains('tab-conrols__link--active')) return
+
+            const tabContentID = tabControl.getAttribute('href')
+            const tabContent = document.querySelector(tabContentID)
+            const activeControl = document.querySelector('.tab-buttons__link--active')
+            const activeContent = document.querySelector('.features__grid--active')
+
+            if (activeControl) {
+                activeControl.classList.remove('tab-buttons__link--active')
+            }
+            if (activeContent) {
+                activeContent.classList.remove('features__grid--active')
+            }
+
+            tabControl.classList.add('tab-buttons__link--active')
+            tabContent.classList.add('features__grid--active')
+
+        }
 
 
         /*================================================================*/
@@ -83,7 +111,9 @@
             buttonFAQexpand.style.display = 'none'
         }
 
-        //=================================================================================//
+        /*================================================================*/
+        /*===================testimonials slider==========================*/
+        /*================================================================*/
 
         const swiper = new Swiper('.testimonials__slider', {
             // Optional parameters
