@@ -86,29 +86,66 @@
         /*===================show all FAQ=================================*/
         /*================================================================*/
 
-        const blockExpand = document.querySelector('.expand__faq')
-        blockExpand.addEventListener('click', faqExpand)
+        const buttonkExpand = document.querySelector('.faq__button')
+        console.log(buttonkExpand)
+
+        buttonkExpand.addEventListener('click', faqExpand)
 
         function faqExpand(e) {
-            const buttonFAQexpand = e.target.closest('.faq__button')
-
-
-            if (!buttonFAQexpand) return
+            console.log('Click')
             e.preventDefault()
 
             const hiddenGrid = document.querySelectorAll('.faq__grid-item--hidden')
             const previewGrid = document.querySelectorAll('.faq__grid-item:nth-child(3), .faq__grid-item:nth-child(4)')
 
-
             previewGrid.forEach((item) => {
                 item.classList.add('faq__grid-item--open')
+                console.log('сбросил маску')
             })
 
             hiddenGrid.forEach((item) => {
                 item.classList.remove('faq__grid-item--hidden')
+                console.log('выплыл вниз')
             })
 
-            buttonFAQexpand.style.display = 'none'
+            buttonkExpand.style.display = 'none';
+            console.log('кнопка пропала')
+
+
+            document.querySelector('.collapse__button').style.display = 'flex'
+        }
+
+        /*================================================================*/
+        /*===================hide all FAQ=================================*/
+        /*================================================================*/
+
+        const buttonHide = document.querySelector('.collapse__button')
+        console.log(buttonHide)
+
+        buttonHide.addEventListener('click', faqHide)
+
+        function faqHide(e) {
+            console.log('Click close')
+            e.preventDefault()
+
+            const hiddenGrid = document.querySelectorAll('.faq__grid-item:nth-child(5), .faq__grid-item:nth-child(6)');
+            const previewGrid = document.querySelectorAll('.faq__grid-item:nth-child(3), .faq__grid-item:nth-child(4)')
+
+            previewGrid.forEach((item) => {
+                item.classList.remove('faq__grid-item--open')
+                console.log('сбросил маску close')
+            })
+
+            hiddenGrid.forEach((item) => {
+                item.classList.add('faq__grid-item--hidden')
+                console.log('выплыл вниз close')
+            })
+
+            buttonHide.style.display = 'none';
+            console.log('кнопка пропала close')
+
+
+            document.querySelector('.faq__button').style.display = 'flex'
         }
 
         /*================================================================*/

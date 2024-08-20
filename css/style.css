@@ -386,7 +386,7 @@ hr {
     padding: 50px;
 }
 
-.tab-buttons__item{
+.tab-buttons__item {
     width: 100%;
 }
 
@@ -406,17 +406,17 @@ hr {
     box-shadow: inset 0px 0px 29px rgba(69, 75, 69, 0.8);
 }
 
-.tab-buttons__link--active{
+.tab-buttons__link--active {
     color: var(--accent-green);
     cursor: default;
     transition: all .3s;
 }
 
-.tab-buttons__link--active:hover{
+.tab-buttons__link--active:hover {
     box-shadow: none;
 }
 
-.features__grid{
+.features__grid {
     display: none;
 }
 
@@ -435,13 +435,14 @@ hr {
     padding: 50px;
 }
 
-.features__grid-header{
+.features__grid-header {
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 31px;
 }
+
 .features__grid-title {
     font-size: 22px;
     color: var(---global-white);
@@ -461,7 +462,6 @@ hr {
     margin-bottom: 150px;
 }
 
-
 .faq__text {
     padding: 14px 0 80px;
 }
@@ -470,7 +470,6 @@ hr {
     display: grid;
     grid-template: auto / repeat(2, 1fr);
     gap: 30px;
-    background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, #191919 100%);
 }
 
 .faq__grid-item {
@@ -478,8 +477,18 @@ hr {
     border-radius: 14px;
 
     padding: 50px;
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 0.5s 0.4s;
+}
 
-    transition: all .4s;
+.faq__grid-item--hidden {
+    position: absolute;
+    top: 37%;
+
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.5s
 }
 
 .faq__grid-question {
@@ -499,7 +508,6 @@ hr {
     mask: linear-gradient(to bottom, #ffffff, transparent);
     user-select: none;
 }
-
 
 @keyframes appearance {
     0% {
@@ -521,27 +529,16 @@ hr {
 
 .faq__grid-item.faq__grid-item--open {
     animation: appearance;
-    animation-duration: .3s;
+    animation-duration: .4s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     user-select: auto;
 }
 
-
-.faq__grid-item--hidden {
-    max-height: 0;
-    overflow: hidden;
-    border: none;
-    padding: 0;
-}
-
-
 .expand__faq {
     display: flex;
     justify-content: center;
-
 }
-
 
 .faq__button {
     display: flex;
@@ -557,7 +554,6 @@ hr {
     transition: all .3s;
 }
 
-
 .collapse__button {
     margin-top: 50px;
     padding: 17px;
@@ -569,7 +565,6 @@ hr {
 .collapse__button svg {
     transform: rotate(180deg);
 }
-
 
 .faq__button:hover,
 .collapse__button:hover {
