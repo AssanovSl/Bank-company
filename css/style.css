@@ -83,7 +83,7 @@ hr {
 
 .header__top {
     padding-top: 50px;
-    margin-bottom: 48px;
+    margin-bottom: 103px;
 }
 
 .header__inner {
@@ -103,6 +103,10 @@ hr {
 
 .header__logo {
     max-width: 156px;
+}
+
+.logo img {
+    width: 100%;
 }
 
 .nav {
@@ -128,10 +132,13 @@ hr {
     justify-self: end;
 }
 
+.header__login-button {
+    padding: 14px 30px;
+}
+
 /*========================HEADER-hero=======================*/
 
 .header__hero {
-    padding-top: 100px;
     margin-bottom: 120px;
 
     background: url(../img/decor/bg-arrow.png) 93% 30% no-repeat
@@ -144,6 +151,7 @@ hr {
 
 .hero__content {
     max-width: 825px;
+    padding-top: 45px;
 }
 
 .hero__info {
@@ -245,7 +253,7 @@ hr {
 
 .product-list__item {
     text-align: center;
-    max-width: 465px;
+    flex: 1;
 }
 
 .product-list__title {
@@ -254,6 +262,8 @@ hr {
     padding: 30px 20px;
     font-weight: 300;
 }
+
+
 
 
 /*==========================================================*/
@@ -279,7 +289,7 @@ hr {
 
 .cases__tiles {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-template: auto / repeat(2, 1fr);
 
     padding: 50px;
     gap: 20px;
@@ -827,4 +837,262 @@ hr {
 
 .footer__policy span:last-child::after {
     content: none;
+}
+
+
+
+
+
+
+/*==========================================================*/
+/*==========================================================*/
+/*========================MEDIA=============================*/
+/*==========================================================*/
+/*==========================================================*/
+
+
+
+@media (max-width: 1440px) {
+    .body {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 1310px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+
+    .header__top {
+        padding-top: 30px;
+        margin-bottom: 56px;
+    }
+
+    .header__inner {
+        padding: 14px 24px;
+    }
+
+    .logo {
+        max-width: 116px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 14px 24px;
+    }
+
+    .header__login-button {
+        padding: 12px 24px;
+    }
+
+    .hero__inner {
+        gap: 50px;
+    }
+
+    .hero__content {
+        max-width: 649px;
+    }
+
+    .hero__info {
+        max-width: 278px;
+        padding: 8px 16px 8px 10px;
+    }
+
+    .hero__info img {
+        width: 20px;
+    }
+
+    .hero__info-text {
+        font-size: 14px;
+    }
+
+    .hero__demo {
+        max-width: 500px;
+    }
+
+    .hero__demo-img img {
+        max-width: 100%;
+    }
+
+
+
+    .products__description {
+        max-width: 831px;
+    }
+
+    .switch {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .switch__item {
+        padding: 10px 0 10px;
+    }
+
+    .switch__link {
+        padding: 10px 18px;
+    }
+
+    .product-list__item img {
+        max-width: 72px;
+    }
+
+    .product-list__title {
+        font-size: 20px;
+    }
+
+
+
+    .cases__grid {
+        gap: 40px 60px;
+    }
+
+    .cases__grid-title {
+        font-size: 26px;
+    }
+
+    .cases__tiles {
+        padding: 40px;
+        gap: 10px;
+        border-radius: 12px;
+    }
+
+    .cases__tiles-item {
+        gap: 14px;
+        font-size: 16px;
+        padding: 24px;
+        border-radius: 12px;
+    }
+
+    .cases__tiles-item img {
+        max-width: 64px;
+    }
+
+    .cases__grid-indicator span {
+        font-size: 40px;
+    }
+
+    .cases__grid-indicator p {
+        font-size: 15px;
+    }
+
+    .cases__grid-percent {
+        gap: 50px;
+        padding: 50px 0 50px;
+    }
+
+
+    .features__inner {
+        gap: 20px;
+    }
+
+    .features__text {
+        max-width: 1008px;
+    }
+
+    .tab-buttons {
+        font-size: 14px;
+        gap: 20px;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .tab-buttons__link {
+        padding: 14px 20px;
+    }
+
+    .features__grid--active {
+        gap: 20px;
+        max-width: 1015px;
+    }
+
+    .features__grid-item {
+        border-radius: 10px;
+        padding: 40px;
+    }
+
+    .features__grid-title {
+        font-size: 18px;
+    }
+
+    .features__grid-header svg {
+        width: 18px;
+        height: 18px;
+    }
+
+
+
+    .faq__grid {
+        gap: 20px;
+    }
+
+    .faq__grid-item {
+        border-radius: 10px;
+        padding: 40px;
+    }
+
+    .faq__grid-question {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .faq__grid-answer {
+        margin-top: 24px;
+    }
+
+    .faq__button {
+        padding: 14px 20px;
+    }
+
+    .collapse__button {
+        margin-top: 35px;
+        padding: 10px;
+    }
+
+
+
+    .testimonials__description {
+        max-width: 831px;
+    }
+
+    .testimonials__header svg {
+        width: 44px;
+    }
+
+    .testimonials__header {
+        gap: 16px;
+    }
+
+    .testimonials__quote {
+        padding: 40px 0 40px;
+    }
+
+
+
+    .banner__inner--texture {
+        border-radius: 20px;
+    }
+
+    .banner__inner {
+        padding: 60px;
+        border-radius: 20px;
+    }
+
+    .banner__titile {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .footer__buttom {
+        padding: 12px 24px 12px 12px;
+    }
+
+    .footer__socials-link svg {
+        width: 44px;
+    }
 }
