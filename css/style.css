@@ -41,6 +41,20 @@
     height: 100%;
 }
 
+.burger-icon {
+    display: none;
+
+    border-radius: 82px;
+    padding: 6px 14px;
+    width: 56px;
+    height: 40px;
+    background: var(--accent-green);
+}
+
+.burger-icon svg {
+    transform: translate(0%, 50%);
+}
+
 hr {
     border: 1px solid var(--border-color);
 }
@@ -339,6 +353,7 @@ hr {
 
 .cases__grid-percent {
     display: flex;
+    justify-content: space-between;
     gap: 50px;
     padding: 62px 0 62px;
 }
@@ -394,6 +409,7 @@ hr {
     background: var(--accent-bg);
     border-radius: 12px;
     padding: 50px;
+    min-width: 308px;
 }
 
 .tab-buttons__item {
@@ -477,6 +493,7 @@ hr {
 }
 
 .faq__grid {
+    position: relative;
     display: grid;
     grid-template: auto / repeat(2, 1fr);
     gap: 30px;
@@ -494,9 +511,7 @@ hr {
 
 .faq__grid-item--hidden {
     position: absolute;
-    top: 37%;
-
-    opacity: 0;
+g    opacity: 0;
     transform: translateY(-100%);
     transition: all 0.5s
 }
@@ -1094,5 +1109,137 @@ hr {
 
     .footer__socials-link svg {
         width: 44px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .products__description {
+        max-width: 615px;
+    }
+
+    .testimonials__description {
+        max-width: 615px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .hero__content {
+        max-width: 553px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .body {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero__content {
+        max-width: 430px;
+    }
+
+    .products__top,
+    .testimonials__top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+
+    .cases__text {
+        text-align: center;
+    }
+
+    .cases__grid {
+        grid-template-columns: auto;
+        justify-items: center;
+        gap: 1;
+    }
+
+    .cases__grid-item {}
+
+    .features__text {
+        text-align: center;
+    }
+
+    .features__inner {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-buttons {
+        gap: 20px;
+        flex-direction: row;
+        padding: 11px;
+        border-radius: 15px;
+    }
+
+    .tab-buttons__item {
+        width: auto
+    }
+
+    .tab-buttons__link {
+        padding: 10px 15px;
+    }
+
+    .faq__text {
+        text-align: center;
+    }
+
+    .testimonials__prev,
+    .testimonials__next {
+        width: 52px;
+        height: 52px;
+    }
+
+    .testimonials__prev {
+        order: 1;
+    }
+
+    .testimonials__next {
+        order: 2;
+    }
+
+    .testimonials__conteiner {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 850px) {
+    .logo {
+        max-width: 101px;
+    }
+
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__login {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        inset: 0;
+        background: #aff066a9;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 415px) {
+    .container {
+        max-width: 388px;
     }
 }
