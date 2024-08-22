@@ -511,7 +511,7 @@ hr {
 
 .faq__grid-item--hidden {
     position: absolute;
-g    opacity: 0;
+    opacity: 0;
     transform: translateY(-100%);
     transition: all 0.5s
 }
