@@ -965,6 +965,14 @@ hr {
     }
 
 
+    .header {
+        background-size: 29%;
+    }
+
+    .header__hero {
+        background: url(../img/decor/bg-arrow.png) 98% 20% no-repeat;
+    }
+
     .header__top {
         padding-top: 30px;
         margin-bottom: 56px;
@@ -1199,6 +1207,11 @@ hr {
 }
 
 @media (max-width: 1210px) {
+    .header__hero {
+        background: url(../img/decor/bg-arrow.png) 100% 10% no-repeat;
+        background-size: 15%;
+    }
+
     .products__description {
         max-width: 615px;
     }
@@ -1209,6 +1222,10 @@ hr {
 }
 
 @media (max-width: 1100px) {
+    .header {
+        background-size: 50%;
+    }
+
     .hero__content {
         max-width: 553px;
         align-self: center;
@@ -1320,6 +1337,15 @@ hr {
         z-index: 3;
     }
 
+    .header {
+        background-size: 80%;
+    }
+
+    .header__hero {
+        background: url(../img/decor/bg-arrow.png) 98% 54% no-repeat;
+        background-size: 41%;
+    }
+
     .header__login {
         display: none;
         visibility: hidden;
@@ -1361,6 +1387,25 @@ hr {
 
     .nav__item {
         font-size: 30px;
+    }
+
+    .hero__inner {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .hero__content {
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero__demo {
+        max-width: none;
+        text-align: center;
     }
 
     .footer {
@@ -1405,18 +1450,9 @@ hr {
         margin-bottom: 96px;
     }
 
-    .hero__inner {
-        flex-direction: column;
-        gap: 60px;
-    }
-
-    .hero__content {
-        max-width: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
+    .header__hero {
+        background: url(../img/decor/bg-arrow.png) 97% 59% no-repeat;
+        background-size: 50%;
     }
 
     .mian__products {
@@ -1459,7 +1495,8 @@ hr {
     .cases__tiles-item {
         font-size: 14px;
         padding: 20px 14px;
-
+        height: 100%;
+        justify-content: center;
     }
 
     .cases__grid-percent {
@@ -1554,8 +1591,8 @@ hr {
 
     .banner__inner {
         background: linear-gradient(227deg, #1c1c1c -40.34%, rgba(28, 28, 28, 0) 64%);
-    } 
-    
+    }
+
     .main__banner {
         margin-bottom: 80px;
     }
@@ -1564,7 +1601,7 @@ hr {
         font-size: 14px;
     }
 
-    .footer__bottom{
+    .footer__bottom {
         position: relative;
         grid-template-columns: none;
         justify-content: center;
@@ -1581,12 +1618,17 @@ hr {
     }
 }
 
-    @media (max-width: 400px) {
-        .container {
-            max-width: 388px;
-        }
-
-        .body--opened-menu .header__login {
-            right: 20px;
-        }
+@media (max-width: 400px) {
+    .container {
+        max-width: 388px;
     }
+
+    .header__hero {
+        background: url(../img/decor/bg-arrow.png) 97% 62% no-repeat;
+        background-size: 47%;
+    }
+
+    .body--opened-menu .header__login {
+        right: 20px;
+    }
+}
