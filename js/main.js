@@ -184,11 +184,8 @@
             // Optional parameters
             spaceBetween: 80,
             initialSlide: 1,
-            slidesPerView: 3,
+            slidesPerView: 1,
             centeredSlides: true,
-
-
-
 
             // Navigation arrows
             navigation: {
@@ -196,6 +193,11 @@
                 prevEl: '.testimonials__prev',
             },
 
+            breakpoints: {
+                601: {
+                    slidesPerView: 3,
+                }
+            }
         });
 
 
