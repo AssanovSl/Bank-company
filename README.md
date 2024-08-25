@@ -13,6 +13,13 @@ There are such elements as:
 
 And this project shows skills in using Git and GH.
 
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/>
+***
+<br/><br/>
+***
+
 - [x]  Возьмите любой ваш проект, либо готовый проект из интернета и создайте для него Git и GitHub репозиторий. Основной веткой будет main.
 - [x]  Добавьте базовый README файл с описанием проекта.
 - [x]  Добавьте правила по защите main ветки на GitHub.
