@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="body">
+<body class="body ">
     <div class="wrapper">
         <div class="header">
             <div class="header__top">
@@ -47,13 +47,27 @@
                             </ul>
                         </nav>
                         <div class="header__login">
-                            <p class="header__login-text">
+                            <button class="header__sign-up">
                                 Sign Up
-                            </p>
+                            </button>
                             <button class="header__login-button button">
                                 Login
                             </button>
                         </div>
+                        <a class="burger-icon">
+                            <svg class='burger--opened'width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.5 0.875C0.5 0.391751 0.891751 0 1.375 0H20.625C21.1082 0 21.5 0.391751 21.5 0.875C21.5 1.35825 21.1082 1.75 20.625 1.75H1.375C0.891751 1.75 0.5 1.35825 0.5 0.875ZM0.5 7C0.5 6.51675 0.891751 6.125 1.375 6.125H20.625C21.1082 6.125 21.5 6.51675 21.5 7C21.5 7.48325 21.1082 7.875 20.625 7.875H1.375C0.891751 7.875 0.5 7.48325 0.5 7ZM10.125 13.125C10.125 12.6418 10.5168 12.25 11 12.25H20.625C21.1082 12.25 21.5 12.6418 21.5 13.125C21.5 13.6082 21.1082 14 20.625 14H11C10.5168 14 10.125 13.6082 10.125 13.125Z"
+                                    fill="#333333" />
+                            </svg>
+
+                            <svg class='burger--closed' style="display: none;" width="18.000977" height="18.000000" viewBox="0 0 18.001 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect id="Прямоугольник 1" x="2.181641" y="0.144775" rx="1.081748" width="22.716705" height="2.163496" transform="rotate(45.8609 2.181641 0.144775)" fill="#333333" fill-opacity="1.000000"/>
+                                <rect id="Прямоугольник 1" y="16.302734" rx="1.000000" width="22.716705" height="2.163496" transform="rotate(-45.8609 0.000000 16.302734)" fill="#333333" fill-opacity="1.000000"/>
+                            </svg>
+                            
+                        </a>
                     </div>
                 </div>
             </div>
@@ -76,7 +90,7 @@
                                 individuals and businesses to achieve their financial goals. We are committed to
                                 delivering personalized and innovative services that prioritize our customers' needs.
                             </p>
-                            <a href="" class="hero__button button">Open Account</a>
+                            <a href="#" class="hero__button button">Open Account</a>
                         </div>
                         <div class="hero__demo">
                             <div class="hero__demo-img">
@@ -618,7 +632,7 @@
                                 dignissimos.
                             </p>
                         </div>
-                        
+
                         <!--    ================ no vis =========================== -->
                         <div class="faq__grid-item faq__grid-item--hidden">
                             <h4 class="faq__grid-question">
@@ -670,7 +684,6 @@
                         </button>
                     </div>
             </section>
-
             <section class="testimonials mian__testimonials">
                 <div class="container">
                     <div class="testimonials__top">
@@ -974,7 +987,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
         <div class="footer">
             <div class="container">
@@ -983,30 +995,28 @@
                         <img src="./img/logo/logo_desktop.svg" alt="YourBank">
                     </a>
                     <nav class="fotter__nav">
-                        <nav class="footer__nav nav ">
-                            <ul class="nav__list">
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">
-                                        Careers
-                                    </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">
-                                        About
-                                    </a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="#" class="nav__link">
-                                        Security
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <ul class="footer__nav-list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    Careers
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    Security
+                                </a>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
                 <hr>
@@ -1027,7 +1037,7 @@
                     </ul>
                 </address>
                 <hr>
-                <div class="footer__buttom">
+                <div class="footer__bottom">
                     <ul class="footer__socials-list">
                         <li class="footer__socials-item">
                             <a href="#" class="footer__socials-link">
@@ -1082,10 +1092,10 @@
                     </p>
                     <div class="footer__policy">
                         <span>
-                            Privacy Policy
+                            <a href="#">Privacy Policy </a>
                         </span>
                         <span>
-                            Terms of Service
+                            <a href="#">Terms of Service </a>
                         </span>
                     </div>
                 </div>

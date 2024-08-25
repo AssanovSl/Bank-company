@@ -1,6 +1,34 @@
 (
 
     function () {
+        /*================================================================*/
+        /*========================burger menu=============================*/
+        /*================================================================*/
+
+        const burgerIcon = document.querySelector('.burger-icon');
+        console.log(burgerIcon);
+        burgerIcon.addEventListener('click', burgerInit)
+
+        function burgerInit(e) {
+            if (document.documentElement.clientWidth > 850) return
+
+            if (!document.body.classList.contains('body--opened-menu')) {
+                document.body.classList.add('body--opened-menu')
+                document.querySelector('.burger--closed').style.display = 'block'
+                document.querySelector('.burger--opened').style.display = 'none'
+
+            } else {
+                document.body.classList.remove('body--opened-menu')
+                document.querySelector('.burger--closed').style.display = 'none'
+                document.querySelector('.burger--opened').style.display = 'block'
+            }
+        }
+
+
+        /*================================================================*/
+        /*===================tab in page==========================*/
+        /*================================================================*/
+
         const blockSwitch = document.querySelectorAll('.switch')
 
         blockSwitch.forEach((item) => {
@@ -87,12 +115,12 @@
         /*================================================================*/
 
         const buttonkExpand = document.querySelector('.faq__button')
-        console.log(buttonkExpand)
+        /*    console.log(buttonkExpand)  */
 
         buttonkExpand.addEventListener('click', faqExpand)
 
         function faqExpand(e) {
-            console.log('Click')
+            /*        console.log('Click')  */
             e.preventDefault()
 
             const hiddenGrid = document.querySelectorAll('.faq__grid-item--hidden')
@@ -100,16 +128,16 @@
 
             previewGrid.forEach((item) => {
                 item.classList.add('faq__grid-item--open')
-                console.log('сбросил маску')
+                /*            console.log('сбросил маску')  */
             })
 
             hiddenGrid.forEach((item) => {
                 item.classList.remove('faq__grid-item--hidden')
-                console.log('выплыл вниз')
+                /*            console.log('выплыл вниз')  */
             })
 
             buttonkExpand.style.display = 'none';
-            console.log('кнопка пропала')
+            /*        console.log('кнопка пропала')   */
 
 
             document.querySelector('.collapse__button').style.display = 'flex'
@@ -120,12 +148,12 @@
         /*================================================================*/
 
         const buttonHide = document.querySelector('.collapse__button')
-        console.log(buttonHide)
+        /*    console.log(buttonHide)   */
 
         buttonHide.addEventListener('click', faqHide)
 
         function faqHide(e) {
-            console.log('Click close')
+            /*      console.log('Click close')  */
             e.preventDefault()
 
             const hiddenGrid = document.querySelectorAll('.faq__grid-item:nth-child(5), .faq__grid-item:nth-child(6)');
@@ -133,16 +161,16 @@
 
             previewGrid.forEach((item) => {
                 item.classList.remove('faq__grid-item--open')
-                console.log('сбросил маску close')
+                /*            console.log('сбросил маску close') */
             })
 
             hiddenGrid.forEach((item) => {
                 item.classList.add('faq__grid-item--hidden')
-                console.log('выплыл вниз close')
+                /*            console.log('выплыл вниз close')  */
             })
 
             buttonHide.style.display = 'none';
-            console.log('кнопка пропала close')
+            /*        console.log('кнопка пропала close') */
 
 
             document.querySelector('.faq__button').style.display = 'flex'
@@ -156,11 +184,8 @@
             // Optional parameters
             spaceBetween: 80,
             initialSlide: 1,
-            slidesPerView: 3,
+            slidesPerView: 1,
             centeredSlides: true,
-
-
-
 
             // Navigation arrows
             navigation: {
@@ -168,6 +193,11 @@
                 prevEl: '.testimonials__prev',
             },
 
+            breakpoints: {
+                601: {
+                    slidesPerView: 3,
+                }
+            }
         });
 
 
